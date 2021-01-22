@@ -1,0 +1,20 @@
+/* Importação da fonte 'Roboto' */
+@font-face{
+  font-family: "Roboto";
+  src: url("./fonts/Roboto-Regular.ttf")
+}
+
+/* Reseta as margens e paddings de tudo */
+*{
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+/* Define como padrão de fonte, tamanho 14px, com a fonte Roboto */
+body{
+  font-size: 14px;
+  font-family: Roboto;
+  text-decoration: none;
+}
