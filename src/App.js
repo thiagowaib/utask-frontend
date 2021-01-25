@@ -2,11 +2,17 @@ import React from 'react';
 import { BrowserRouter } from 'react-router-dom';
 
 import Routes from './routes';
+import Header from './components/Header';
+import New from './components/New';
 
-function App() {
+function App(){
   return (
     <BrowserRouter>
-      <Routes />
+     <Header/>
+     <New/>
+     <h1>ToDo</h1>
+     <Routes/>
+     <h2>Done</h2>
     </BrowserRouter>
   );
 }
