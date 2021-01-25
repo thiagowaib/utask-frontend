@@ -4,22 +4,16 @@ import api from '../services/api';
 class New extends Component{
     state = {
         description: '',
-    };
+    }
 
-    handleSubmit =  e =>{
+    handleSubmit = async e =>{
         e.preventDefault();
 
-        //const data = new FormData();
+        await api.post('tasks', {
+            description: this.state.description,
+        })
 
-        //data.append('description', this.state.description);
-
-        e.handlePost();
-        }
-      
-        
-    handlePost = e =>  {
-            this.setState({ description: "aaa" });
-            console.log(this.state);
+        console.log(this.state);
     }
 
     handleChange = e => {
