@@ -31,27 +31,35 @@ h1{
 }
 
 #new-todo button{
-  color:#00B0FF;
+  color:#ffffff;
   font-size: 32px;
-  padding: 5px 13px 5px 13px;
+  padding: 5px 13px 6px 13px;
   text-decoration: none;
   text-align: center;
 
   vertical-align: middle;
   margin-left: 10px;
 
-  background: linear-gradient(145deg, #ffffff, #d4d4d4);
+  background: linear-gradient(145deg, #2dbcff, #0080bb);
   border: 0;
   border-radius: 50px;
 
+  box-shadow: 3px 3px 4px #059adf94, -2px -2px 3px  #dff5ff;
+}
+
+#new-todo button:disabled{
+  color:#f7f7f7;
+  cursor: auto;
+  background: linear-gradient(145deg, #e9e9e9, #b6b6b6);
   box-shadow: 3px 3px 5px #c9c9c9, -5px -5px 10px #ffffff;
 }
-#new-todo button:hover{
+
+#new-todo button:hover:enabled{
   cursor: pointer;
 }
-#new-todo button:active{
-  background: linear-gradient(145deg, #d4d4d4, #ffffff);
+#new-todo button:enabled:active{
+  background: linear-gradient(145deg, #0080bb, #2dbcff);
 
   font-size: 30px;
-  padding: 6px 14px 6px 14px;
+  padding: 6px 14px 7px 14px;
 }

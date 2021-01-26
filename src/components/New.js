@@ -35,7 +35,9 @@ class New extends Component {
             type="submit"
             disabled={
               this.state.description.length === 0 ||
-              this.state.description === ' '
+              this.state.description === ' ' ||
+              this.state.description === '  ' ||
+              this.state.description.includes('   ', 0)
             }
           >
             +
