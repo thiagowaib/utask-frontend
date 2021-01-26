@@ -31,7 +31,15 @@ class New extends Component {
             onChange={this.handleChange}
             value={this.state.description}
           />
-          <button type="submit">+</button>
+          <button
+            type="submit"
+            disabled={
+              this.state.description.length === 0 ||
+              this.state.description === ' '
+            }
+          >
+            +
+          </button>
         </form>
       </header>
     );
