@@ -17,4 +17,8 @@ body{
   font-size: 14px;
   font-family: Roboto;
   text-decoration: none;
+  background: whitesmoke;
+  background-image: url('../assets/Background.jpg');
+  background-position:top;
+  background-repeat: repeat;
 }

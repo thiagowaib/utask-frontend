@@ -1,13 +1,13 @@
 import { Switch, Route } from 'react-router-dom';
 import React from 'react';
 
-import MainPage from './pages/MainPage';
+import MainPage from './Pages/MainPage';
 
 function Routes() {
-  return(
-  <Switch>
-   <Route path="/" component={MainPage} />;
-  </Switch>
+  return (
+    <Switch>
+      <Route path="/" component={MainPage} />;
+    </Switch>
   );
 }
 
