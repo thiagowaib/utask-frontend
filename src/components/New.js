@@ -13,6 +13,7 @@ class New extends Component {
       description: this.state.description,
     });
     e.target.children[0].value = '';
+    this.setState({ description: '' });
   };
 
   handleChange = (e) => {
