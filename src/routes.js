@@ -1,7 +1,7 @@
 import { Switch, Route } from 'react-router-dom';
 import React from 'react';
 
-import MainPage from './Pages/MainPage';
+import MainPage from './pages/MainPage';
 
 function Routes() {
   return (
