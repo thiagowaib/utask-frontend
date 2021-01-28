@@ -2,11 +2,19 @@ import React, { Component } from 'react';
 import api from '../services/api';
 
 import '../css/New.css';
+
+// _____________________________________________
+// Componente que representa o 'Header' da página
+// Onde tem título e a funcionalidade de
+// Adicionar uma nova task
+// ______________________________________________
 class New extends Component {
   state = {
     description: '',
   };
 
+  // Função que lida com o "Submit" da informação do input
+  // Chamada quando o botão (+) é apertado.
   handleSubmit = async (e) => {
     e.preventDefault();
     await api.post('tasks', {
@@ -16,10 +24,13 @@ class New extends Component {
     this.setState({ description: '' });
   };
 
+  // Função chamada toda vez que o usuario muda
+  // o input (adiciona ou remove texto).
   handleChange = (e) => {
     this.setState({ [e.target.name]: e.target.value });
   };
 
+  // Render do JSX
   render() {
     return (
       <header>
